@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hoges on 忍ばない怠惰ブログ</title>
+    <link>//localhost:1313/hoge/</link>
+    <description>Recent content in Hoges on 忍ばない怠惰ブログ</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <atom:link href="//localhost:1313/hoge/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>//localhost:1313/hoge/hoge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/hoge/hoge/</guid>
+      <description>&lt;h1 id=&#34;hello-hoge&#34;&gt;Hello Hoge&lt;/h1&gt;</description>
+    </item>
+  </channel>
+</rss>
