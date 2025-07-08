@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>忍ばない怠惰テックノート</title><link>/</link><description>Recent content on 忍ばない怠惰テックノート</description><generator>Hugo</generator><language>ja</language><lastBuildDate>Mon, 24 Mar 2025 23:00:00 -0300</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>Configuration</title><link>/posts/configuration/</link><pubDate>Mon, 24 Mar 2025 23:00:00 -0300</pubDate><guid>/posts/configuration/</guid><description>&lt;p>This page outlines the configuration options for the theme. There are plenty of settings for tweaking your site&amp;rsquo;s layout and content presentation. Key features include options for controlling the side pane visibility, adjusting the number of items displayed on each list page, and managing elements such as featured posts, recent posts, taxonomies, and related content.&lt;/p>
+&lt;h2 id="global-config">Global Config&lt;/h2>
+&lt;p>The following configuration options can be added to your site&amp;rsquo;s Hugo config file.&lt;/p></description></item><item><title>About</title><link>/about/</link><pubDate>Mon, 24 Mar 2025 23:00:00 -0300</pubDate><guid>/about/</guid><description>&lt;h1 id="about">About&lt;/h1>
+&lt;blockquote>
+&lt;p>Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.&lt;/p>&lt;/blockquote>
+&lt;p>Rusty-Typewriter is a theme for Hugo sites made by &lt;a href="https://github.com/math-queiroz">math-queiroz&lt;/a>. It&amp;rsquo;s intended to be simple and used for blogs, being mostly inspired by the current &lt;a href="https://zen-browser.app/">Zen Browser&amp;rsquo;s website&lt;/a> in style and other Hugo themes in functionality. It was initially intended for personal use but was made public for anyone who finds it worth using.&lt;/p></description></item><item><title>Dark Theme</title><link>/features/dark-mode/</link><pubDate>Mon, 24 Mar 2025 23:00:00 -0300</pubDate><guid>/features/dark-mode/</guid><description>&lt;p>You can change the current theme between dark and light mode by using the switcher icon at the right of the navbar.&lt;/p>
+&lt;p>The colors tweaked by the theme change are ideally defined in a non bundled CSS file (to optimize caching, since the theming is expected to change more than the rest) under the &lt;code>:root[color-scheme^='dark/light']&lt;/code> selector. Should you want to adjust them, a simple stylesheet rules override should suffice. You can read about it in &lt;a href="/features/customization">customization&lt;/a>.&lt;/p></description></item><item><title>Internationalization</title><link>/features/internationalization/</link><pubDate>Mon, 24 Mar 2025 23:00:00 -0300</pubDate><guid>/features/internationalization/</guid><description>&lt;p>Rusty Typewriter supports internationalization (i18n) files for localizing its sentences. By default it fallsback to english, but you may use the values from an existing translations file or add your own translations in the &lt;code>i18n/&amp;lt;lang&amp;gt;.yaml&lt;/code> dir of your site.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Root&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">theme_light&lt;/span>: &lt;span style="color:#ae81ff">Light Theme&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">theme_dark&lt;/span>: &lt;span style="color:#ae81ff">Dark Theme&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Footer&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">scroll_top&lt;/span>: &lt;span style="color:#ae81ff">Scroll to Top&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">footer&lt;/span>: &lt;span style="color:#ae81ff">Made with ❤️ and powered by {{ .ThemeAnchor }} theme for {{ .HugoAnchor }}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Home&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">featured_posts&lt;/span>: &lt;span style="color:#ae81ff">Featured Posts&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">recent_posts&lt;/span>: &lt;span style="color:#ae81ff">Recent Posts&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># SidePane for home&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">search&lt;/span>: &lt;span style="color:#ae81ff">Search...&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">see_all&lt;/span>: &lt;span style="color:#ae81ff">See all...&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Page&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">breadcrumb_home&lt;/span>: &lt;span style="color:#ae81ff">Home&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># SidePane for single pages&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">details_words&lt;/span>: &lt;span style="color:#ae81ff">words&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">details_read_time&lt;/span>: &lt;span style="color:#ae81ff">minutes read&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">side_table_of_contents&lt;/span>: &lt;span style="color:#ae81ff">Table Of Contents&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">side_attachments&lt;/span>: &lt;span style="color:#ae81ff">Attachments&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">side_related&lt;/span>: &lt;span style="color:#ae81ff">Related&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;blockquote>
+&lt;p>&lt;strong>Note:&lt;/strong> Didn&amp;rsquo;t find a value you&amp;rsquo;re looking for? Check the &lt;a href="https://github.com/math-queiroz/rusty-typewriter">repository&lt;/a> for the given file (which may be updated with it), or create a new feature request!&lt;/p></description></item><item><title>Search</title><link>/search/</link><pubDate>Mon, 24 Mar 2025 23:00:00 -0300</pubDate><guid>/search/</guid><description>&lt;h1 id="search">Search&lt;/h1>
+&lt;p>Here you can search for indexable pages, like posts and alike. There&amp;rsquo;s also support for URL param &amp;ldquo;q&amp;rdquo; which then auto searches upon page load event.&lt;/p>
+&lt;p class="hidden">It&amp;#39;s necessary to enable Javascript&lt;/p>
+&lt;p class="search-loading hidden">Loading...&lt;/p>
+
+&lt;form id="search-form" class="search-form" action="#" method="post" accept-charset="UTF-8" role="search">
+ &lt;div class="search-bar">
+ &lt;label for="query" class="hidden">&lt;/label>
+ &lt;input id="query" class="search-text" type="text" placeholder="Search..."/>
+ &lt;/div>
+&lt;/form>
+
+&lt;div class="search-results">&lt;/div>
+
+&lt;template>
+ &lt;article class="search-result list-view">
+ &lt;header>
+ &lt;h2 class="title">&lt;a href="#">&lt;/a>&lt;/h2>
+ &lt;div class="submitted">
+ &lt;time class="created-date">&lt;/time>
+ &lt;/div>
+ &lt;/header>
+ &lt;p class="content">&lt;/p>
+ &lt;/article>
+&lt;/template></description></item><item><title>Showcase</title><link>/posts/showcase/</link><pubDate>Mon, 24 Mar 2025 23:00:00 -0300</pubDate><guid>/posts/showcase/</guid><description>&lt;p>This page focuses on what you can do in terms of markdown syntax. Here you can see which and how each of the components are rendered to HTML in terms of structure and styling.&lt;/p>
+&lt;h1 id="the-use-of-headings">The use of Headings&lt;/h1>
+&lt;p>Headings are larger text intended for section titles, and they vary in size from 1 to 5 (bigger to smaller) as follows:&lt;/p>
+&lt;h1 id="heading-1">Heading 1&lt;/h1>
+&lt;h2 id="heading-2">Heading 2&lt;/h2>
+&lt;h3 id="heading-3">Heading 3&lt;/h3>
+&lt;h4 id="heading-4">Heading 4&lt;/h4>
+&lt;h6 id="heading-5">Heading 5&lt;/h6>
+&lt;h2 id="paragraphs">Paragraphs&lt;/h2>
+&lt;p>Paragraphs are containers for standard page content. Its font is defined and configurable via CSS as mentioned in &lt;a href="/features/customization">customization&lt;/a> post.&lt;/p></description></item><item><title>Static Content</title><link>/features/static-content/</link><pubDate>Mon, 24 Mar 2025 23:00:00 -0300</pubDate><guid>/features/static-content/</guid><description>&lt;p>Some of the static content on the site, like the home greetings and side pane content, can be defined in the file at &lt;code>data/rtwt/content.yaml&lt;/code>. The structure to do so is as follows:&lt;/p>
+&lt;blockquote>
+&lt;p>Note: It&amp;rsquo;s possible to use file formats other than YAML, but the key structure must remain the same!&lt;/p>&lt;/blockquote>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">home&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">image&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;images/greetings.jpg&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">greetings&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;A Hugo Theme for Bloggers!&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">text&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;The definitive, configurable, customizable, old fashioned rusty coloured theme for web writers and readers.&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">side&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">home&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">content&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;Oh, and did I mention it has support for static side pane content? Cool, right?&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">title&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;Media Support&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">content&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;Side content can have images!&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">imagePath&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;images/hugo.svg&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">imageHref&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;https://gohugo.io&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">imageWidth&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;100%&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;blockquote>
+&lt;p>Didn&amp;rsquo;t find a value you&amp;rsquo;re looking for? Check the &lt;a href="https://github.com/math-queiroz/rusty-typewriter">repository&lt;/a> for the given file (which may be updated with it), or create a new feature request!&lt;/p></description></item><item><title>Taxonomies Support</title><link>/features/taxonomies-support/</link><pubDate>Mon, 24 Mar 2025 23:00:00 -0300</pubDate><guid>/features/taxonomies-support/</guid><description>&lt;p>The main taxonomy in the theme is &lt;code>tags&lt;/code>, as it is the one listed under the title in every &amp;ldquo;single&amp;rdquo; page, but it&amp;rsquo;s also possible to set any number of arbitrary taxonomies which will be listed in the side pane details section.&lt;/p>
+&lt;p>For example, in this site there&amp;rsquo;s the taxonomies &lt;code>topic&lt;/code> and &lt;code>series&lt;/code> as defined in the config file.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-toml" data-lang="toml">&lt;span style="display:flex;">&lt;span>[&lt;span style="color:#a6e22e">taxonomies&lt;/span>]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">tag&lt;/span> = &lt;span style="color:#e6db74">&amp;#39;tags&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">topic&lt;/span> = &lt;span style="color:#e6db74">&amp;#39;topics&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">series&lt;/span> = &lt;span style="color:#e6db74">&amp;#39;series&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item></channel></rss>
