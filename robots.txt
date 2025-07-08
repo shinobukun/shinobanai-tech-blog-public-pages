@@ -1,4 +1,4 @@
 User-agent: *
 Sitemap: sitemap.xml
 
-Disallow: /search/
+Disallow: /shinobanai-tech-blog-public-pages/search/
