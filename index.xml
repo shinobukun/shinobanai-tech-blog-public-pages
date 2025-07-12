@@ -55,16 +55,7 @@
  &lt;/header>
  &lt;p class="content">&lt;/p>
  &lt;/article>
-&lt;/template></description></item><item><title>Showcase</title><link>https://shinobukun.github.io/shinobanai-tech-blog-public-pages/posts/showcase/</link><pubDate>Mon, 24 Mar 2025 23:00:00 -0300</pubDate><guid>https://shinobukun.github.io/shinobanai-tech-blog-public-pages/posts/showcase/</guid><description>&lt;p>This page focuses on what you can do in terms of markdown syntax. Here you can see which and how each of the components are rendered to HTML in terms of structure and styling.&lt;/p>
-&lt;h1 id="the-use-of-headings">The use of Headings&lt;/h1>
-&lt;p>Headings are larger text intended for section titles, and they vary in size from 1 to 5 (bigger to smaller) as follows:&lt;/p>
-&lt;h1 id="heading-1">Heading 1&lt;/h1>
-&lt;h2 id="heading-2">Heading 2&lt;/h2>
-&lt;h3 id="heading-3">Heading 3&lt;/h3>
-&lt;h4 id="heading-4">Heading 4&lt;/h4>
-&lt;h6 id="heading-5">Heading 5&lt;/h6>
-&lt;h2 id="paragraphs">Paragraphs&lt;/h2>
-&lt;p>Paragraphs are containers for standard page content. Its font is defined and configurable via CSS as mentioned in &lt;a href="https://shinobukun.github.io/shinobanai-tech-blog-public-pages/features/customization">customization&lt;/a> post.&lt;/p></description></item><item><title>Static Content</title><link>https://shinobukun.github.io/shinobanai-tech-blog-public-pages/features/static-content/</link><pubDate>Mon, 24 Mar 2025 23:00:00 -0300</pubDate><guid>https://shinobukun.github.io/shinobanai-tech-blog-public-pages/features/static-content/</guid><description>&lt;p>Some of the static content on the site, like the home greetings and side pane content, can be defined in the file at &lt;code>data/rtwt/content.yaml&lt;/code>. The structure to do so is as follows:&lt;/p>
+&lt;/template></description></item><item><title>Static Content</title><link>https://shinobukun.github.io/shinobanai-tech-blog-public-pages/features/static-content/</link><pubDate>Mon, 24 Mar 2025 23:00:00 -0300</pubDate><guid>https://shinobukun.github.io/shinobanai-tech-blog-public-pages/features/static-content/</guid><description>&lt;p>Some of the static content on the site, like the home greetings and side pane content, can be defined in the file at &lt;code>data/rtwt/content.yaml&lt;/code>. The structure to do so is as follows:&lt;/p>
 &lt;blockquote>
 &lt;p>Note: It&amp;rsquo;s possible to use file formats other than YAML, but the key structure must remain the same!&lt;/p>&lt;/blockquote>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">home&lt;/span>:
